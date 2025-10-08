@@ -43,5 +43,3 @@ The system is built on a multi-layered architecture to handle data fetching, pro
   - **Mailing**: Brevo 
   - **Hosting & Compute**: Google Cloud Run 
   - **Scheduling**: Google Cloud Scheduler 
-
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/vlCa2ep6)
