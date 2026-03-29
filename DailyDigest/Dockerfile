@@ -13,6 +13,7 @@ COPY db_utils_headless.py .
 COPY news_utils_headless.py .
 COPY analysis_utils.py .
 COPY email_utils.py .
+COPY config.py .
 
 # Rename the headless utility modules to their expected names
 RUN mv db_utils_headless.py db_utils.py

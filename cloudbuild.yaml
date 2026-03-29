@@ -26,9 +26,9 @@ steps:
     - '--region=us-central1'
     - '--platform=managed'
     - '--allow-unauthenticated'
-    - '--add-cloudsql-instances=newstrendanalyzer:us-central1:trendytracker-subscribers'
-    - '--set-env-vars=INSTANCE_CONNECTION_NAME=newstrendanalyzer:us-central1:trendytracker-subscribers'
-    - '--set-secrets=NEWS_API_KEY=NEWS_API_KEY:latest,DBUSER=DBUSER:latest,PASSWORD=PASSWORD:latest,DBNAME=DBNAME:latest,HOST=HOST:latest,BREVO_API_KEY=BREVO_API_KEY:latest'
+    - '--add-cloudsql-instances=newstrendanalyzer:us-central1:trendytracker-subscribers-3'
+    - '--set-env-vars=INSTANCE_CONNECTION_NAME=newstrendanalyzer:us-central1:trendytracker-subscribers-3'
+    - '--set-secrets=TRENDYTRACKER_SECRETS=TRENDYTRACKER_SECRETS:latest'
 
 # Deploy the Digest Service
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
@@ -41,9 +41,9 @@ steps:
     - '--region=us-central1'
     - '--platform=managed'
     - '--no-allow-unauthenticated'
-    - '--add-cloudsql-instances=newstrendanalyzer:us-central1:trendytracker-subscribers'
-    - '--set-env-vars=INSTANCE_CONNECTION_NAME=newstrendanalyzer:us-central1:trendytracker-subscribers'
-    - '--set-secrets=NEWS_API_KEY=NEWS_API_KEY:latest,DBUSER=DBUSER:latest,PASSWORD=PASSWORD:latest,DBNAME=DBNAME:latest,BREVO_API_KEY=BREVO_API_KEY:latest'
+    - '--add-cloudsql-instances=newstrendanalyzer:us-central1:trendytracker-subscribers-3'
+    - '--set-env-vars=INSTANCE_CONNECTION_NAME=newstrendanalyzer:us-central1:trendytracker-subscribers-3'
+    - '--set-secrets=TRENDYTRACKER_SECRETS=TRENDYTRACKER_SECRETS:latest'
 
 images:
 - 'gcr.io/$PROJECT_ID/trendytracker'

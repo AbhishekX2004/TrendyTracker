@@ -11,6 +11,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from textblob import TextBlob
 from datetime import datetime, timedelta
 import os
+import config
 from dotenv import load_dotenv
 import logging
 from db_utils import init_db, email_exists, add_subscriber
